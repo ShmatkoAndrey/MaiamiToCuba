@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'ferries/new'
+
+  get 'ferries/create'
+
   resource :tickets
   root "tickets#new"
 
