@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dete: 2016-01-29
+  ferry_id: 1
+  plase: MyString
+  name: MyString
+
+two:
+  dete: 2016-01-29
+  ferry_id: 1
+  plase: MyString
+  name: MyString
