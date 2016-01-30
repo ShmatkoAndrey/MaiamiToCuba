@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
 
-  get 'ferries/new'
-
-  get 'ferries/create'
+  get 'ferries/find'
 
   resource :tickets
+  resource :ferries
   root "tickets#new"
 
 

@@ -1,0 +1,6 @@
+- ferries.each do |ferry|
+  .timetable{onClick: "choose_ferry(#{ferry.id})"}
+    .name
+      = ferry.ferry.name
+    .time
+      = "#{"0" if ferry.date.hour<= 9}#{ferry.date.hour}:#{"0" if ferry.date.min<= 9}#{ferry.date.min}"

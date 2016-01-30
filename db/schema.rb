@@ -15,18 +15,18 @@ ActiveRecord::Schema.define(version: 20160129133717) do
 
   create_table "ferries", force: :cascade do |t|
     t.string   "name"
-    t.string   "type"
+    t.string   "typeship"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "tickets", force: :cascade do |t|
-    t.date     "dete"
+    t.datetime "date"
     t.integer  "ferry_id"
-    t.string   "plase"
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "place"
+    t.integer  "timetable_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "timetables", force: :cascade do |t|

@@ -1,7 +1,10 @@
 $(document).ready ->
 
 
-  $( ".date" ).datepicker
+  $( "#date" ).datepicker
     onSelect: (dateText) ->
       selectedDate = new Date(dateText)
-      alert selectedDate
+      $.ajax
+        type: 'GET'
+        url: 'ferries/find?' + "date=" + selectedDate.getFullYear()+"-"+(selectedDate.getMonth()+1)+"-"+selectedDate.getDate()
+        dataType: 'script'

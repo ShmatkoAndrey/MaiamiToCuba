@@ -1,10 +1,10 @@
 class CreateTickets < ActiveRecord::Migration
   def change
     create_table :tickets do |t|
-      t.date :dete
+      t.datetime :date
       t.integer :ferry_id
-      t.string :plase
-      t.string :name
+      t.string :place
+      t.integer :timetable_id
 
       t.timestamps null: false
     end
