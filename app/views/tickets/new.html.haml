@@ -1,3 +1,16 @@
+#ticket
+  .form-group
+    = label_tag "ferry", "Ferry:", class: "form-control-label"
+    = text_field_tag "ferry", "", class: "form-control", readOnly: true
+    = hidden_field_tag "ferry_id", ""
+  .form-group
+    = label_tag "datetime", "Date/Time:", class: "form-control-label"
+    = text_field_tag "datetime", "", class: "form-control", readOnly: true
+    = hidden_field_tag "datetime_id", ""
+  .form-group
+    = label_tag "places", "Places:", class: "form-control-label"
+    #places
+
 #form
   #date.ll-skin-melon
   #ferries
