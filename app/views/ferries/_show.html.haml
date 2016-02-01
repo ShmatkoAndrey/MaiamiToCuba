@@ -1,5 +1,5 @@
 - ferries.each do |ferry|
-  .timetable{onClick: "choose_ferry(#{ferry.id})"}
+  .timetable{onClick: "ferry(#{ferry.id})"}
     .name
       = ferry.ferry.name
     .time

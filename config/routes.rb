@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'ferries/find'
+  get 'ferries/sheep'
 
   resource :tickets
   resource :ferries

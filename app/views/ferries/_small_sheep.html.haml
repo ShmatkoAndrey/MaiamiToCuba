@@ -1,0 +1,26 @@
+.small_sheep
+  .first_row
+    - (0..16).each do |i|
+      - id = "AA#{i+1}"
+      .place{id: id, onClick: "place(#{id})"}
+    %br
+    - (0..16).each do |i|
+      - id = "AB#{i+1}"
+      .place{id: id, onClick: "place(#{id})"}
+    %br
+    - (0..16).each do |i|
+      - id = "AC#{i+1}"
+      .place{id: id, onClick: "place(#{id})"}
+
+  .second_row
+    - (0..16).each do |i|
+      - id = "BA#{i+1}"
+      .place{id: id, onClick: "place(#{id})"}
+    %br
+    - (0..16).each do |i|
+      - id = "BB#{i+1}"
+      .place{id: id, onClick: "place(#{id})"}
+    %br
+    - (0..16).each do |i|
+      - id = "BC#{i+1}"
+      .place{id: id, onClick: "place(#{id})"}
