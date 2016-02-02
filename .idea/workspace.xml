@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d775a40-c21d-4605-b39c-000d77a3d1f3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/ferry.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/ferry.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ferries/find.js.erb" afterPath="$PROJECT_DIR$/app/views/ferries/find.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tickets/new.html.haml" afterPath="$PROJECT_DIR$/app/views/tickets/new.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ferries/sheep.js.erb" afterPath="$PROJECT_DIR$/app/views/ferries/sheep.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/tickets.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/tickets.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tickets_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tickets_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="maiamitocuba.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,51 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tickets.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tickets.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/tickets.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42">
+            <state vertical-scroll-proportion="-14.0">
               <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.haml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new.html.haml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/tickets/new.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
+            <state vertical-scroll-proportion="0.3">
               <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ferries_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ferries_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sheep.js.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/ferries/sheep.js.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="find.js.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/ferries/find.js.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6666665">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -121,13 +88,13 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/ticket.js" />
         <option value="$PROJECT_DIR$/app/views/ferries/cost.js.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/ferry.js" />
         <option value="$PROJECT_DIR$/app/controllers/ferries_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tickets_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/ferries/sheep.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/ferries/find.js.erb" />
         <option value="$PROJECT_DIR$/app/views/tickets/new.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/tickets.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/ferry.js" />
+        <option value="$PROJECT_DIR$/app/views/ferries/sheep.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/ferries/find.js.erb" />
       </list>
     </option>
   </component>
@@ -953,14 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/ferry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5436893">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ferries/cost.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.02">
@@ -969,18 +928,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ferries_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/ferry.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.34951457">
+          <caret line="18" column="95" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ferries/find.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22">
+          <caret line="11" column="87" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ferries/sheep.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.3">
+          <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/tickets.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -993,26 +968,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ferries/find.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ferries_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6666665">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.2524272">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tickets/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
+        <state vertical-scroll-proportion="0.3">
           <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/tickets.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding />
         </state>
       </provider>

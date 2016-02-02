@@ -16,7 +16,7 @@ function place(place_id) {
         $('#placeN'+place_id.id).remove();
         str = place_id.id + ', ';
         places.text(places.text().replace(str, ''))
-        if($('#placeshidden input').length == 0) $('.hidden_fields')[0].style.display = "none"
+        if($('#placeshidden input').length == 0) $('.hidden_fields')[0].style.display = "none";
         type = 'remove';
     }
     else {
