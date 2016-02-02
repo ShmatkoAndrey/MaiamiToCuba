@@ -1,13 +1,4 @@
-#form{
-  margin: auto;
-display: block;
-  height: 283px;
-  width: 952px;
-}
-#date{
-  float:left;
-}
-#ferries{
+#ferries {
   float:left;
   display: inline-block;
   height: 283px;
@@ -25,21 +16,41 @@ display: block;
 .timetable {
   display: block;
   border-bottom: 1px solid grey;
-  padding: 15px;
   opacity: 0.8;
 }
 .timetable:hover, .timetable:focus {
   opacity: 1;
 }
 
-.name{
-  font-size: 20px;
-  display: inline-block;
-  cursor: default;
+.timetable_head {
+  background-color: #aaaaaa !important;
+  display: block;
+  border-bottom: 1px solid grey;
 }
 
-.time{
-  font-size: 16px;
+.name {
+  font-size: 18px;
   display: inline-block;
   cursor: default;
+  border-right: 1px solid black;
+  width: 125px;
+  padding: 15px;
+}
+
+.time {
+  font-size: 18px;
+  display: inline-block;
+  cursor: default;
+  border-right: 1px solid black;
+  width: 65px;
+  padding: 15px 0 15px 5px;
+}
+
+.direction {
+  font-size: 18px;
+  display: inline-block;
+  cursor: default;
+  border-right: 1px solid black;
+  width: 125px;
+  padding: 15px 0 15px 5px;
 }

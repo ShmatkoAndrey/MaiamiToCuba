@@ -1,9 +1,21 @@
+#form {
+  margin: auto;
+  display: block;
+  height: 283px;
+  width: 952px;
+}
+#date {
+  float:left;
+}
+
 #ticket {
   border: 1px solid black;
   display: inline-block;
-  height: 280px;
+  min-height: 300px;
   width: 250px;
-  float: left;
+  float: right;
+
+  position: absolute;
 }
 
 #ticket .form-group .form-control {
@@ -19,6 +31,22 @@
   margin-top: 15px;
 }
 
-#places{
+#places {
   display: inline-block;
+}
+
+.places {
+  display: inline-block;
+}
+
+.hidden_fields {
+  display: none;
+}
+
+.pay_label {
+  display: inline-block;
+}
+.pay_cost {
+  display: inline-block;
+  margin-left: 60px;
 }

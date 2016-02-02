@@ -1,16 +1,28 @@
 #ticket
   .form-group
-    = label_tag "ferry_name", "Ferry:", class: "form-control-label"
-    = text_field_tag "ferry_name", "", class: "form-control", readOnly: true
+    = label_tag 'ferry_name', 'Ferry:', class: 'form-control-label'
+    = text_field_tag 'ferry_name', '', class: 'form-control', readOnly: true
   .form-group
-    = label_tag "datetime", "Date/Time:", class: "form-control-label"
-    = text_field_tag "date_val", "", class: "form-control", readOnly: true
-    = text_field_tag "time_val", "", class: "form-control", readOnly: true
-    = hidden_field_tag "timetable_id", ""
+    = label_tag 'direction', 'Direction:', class: 'form-control-label'
+    = text_field_tag 'direction', '', class: 'form-control', readOnly: true
   .form-group
-    = label_tag "places", "Places:", class: "form-control-label"
+    = label_tag 'date_val', 'Date:', class: 'form-control-label'
+    = text_field_tag 'date_val', '', class: 'form-control', readOnly: true
+  .form-group
+    = label_tag 'time_val', 'Time:', class: 'form-control-label'
+    = text_field_tag 'time_val', '', class: 'form-control', readOnly: true
+    = hidden_field_tag 'timetable_id', ''
+  .hidden_fields
+    .form-group
+      = label_tag 'places', 'Places:', class: 'form-control-label places'
     #places
     #placeshidden
+    #pay
+      = label_tag 'pay', 'Pay:', class: 'form-control-label pay_label'
+      .pay_cost
+        0
+    %button.btn.btn-info
+      Confirm
 
 #form
   #date.ll-skin-melon

@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160201134459) do
   create_table "timetables", force: :cascade do |t|
     t.integer  "ferry_id"
     t.datetime "date"
+    t.string   "direction"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

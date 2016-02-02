@@ -1,12 +1,12 @@
 Ferry.create(name: "DeadLecho", typeship: "large")
 Ferry.create(name: "Skype", typeship: "small")
 
-Timetable.create(date: DateTime.new(2016,2,5,10,0), ferry_id: 1)
-Timetable.create(date: DateTime.new(2016,2,5,17,0), ferry_id: 2)
-Timetable.create(date: DateTime.new(2016,2,7,15,0), ferry_id: 2)
-Timetable.create(date: DateTime.new(2016,2,7,12,0), ferry_id: 1)
-(7).each do
-  Timetable.create(date: DateTime.new(2016,2,6,10,0), ferry_id: 1)
+Timetable.create(date: DateTime.new(2016,2,5,10,0), ferry_id: 1, direction: 'Maiami')
+Timetable.create(date: DateTime.new(2016,2,5,17,0), ferry_id: 2, direction: 'Cuba')
+Timetable.create(date: DateTime.new(2016,2,7,15,0), ferry_id: 2, direction: 'Maiami')
+Timetable.create(date: DateTime.new(2016,2,7,12,0), ferry_id: 1, direction: 'Cuba')
+(0..7).each do
+  Timetable.create(date: DateTime.new(2016,2,6,10,0), ferry_id: 1, direction: 'Maiami')
 end
 
 (0..6).each do |i|

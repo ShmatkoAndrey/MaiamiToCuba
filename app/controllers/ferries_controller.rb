@@ -20,6 +20,17 @@ class FerriesController < ApplicationController
     end
   end
 
+  def cost
+    @timetable = Timetable.find(params[:timetable])
+    @cost = Place.where(name: params[:place], ferry_id: @timetable.ferry.id).first.price
+    if params[:type_cost] == 'remove'
+      @cost = -@cost
+    end
+    respond_to do |format|
+      format.js
+    end
+  end
+
   def create
 
   end
