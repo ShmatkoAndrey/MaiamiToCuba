@@ -13,14 +13,16 @@
     = text_field_tag 'time_val', '', class: 'form-control', readOnly: true
     = hidden_field_tag 'timetable_id', ''
   .hidden_fields
-    .form-group
+    .form-group{style: 'margin-bottom: 0;'}
       = label_tag 'places', 'Places:', class: 'form-control-label places'
-    #places
-    #placeshidden
+      #places
+      #placeshidden
+    %br
     #pay
-      = label_tag 'pay', 'Pay:', class: 'form-control-label pay_label'
-      .pay_cost
-        0
+      .form-group
+        = label_tag 'pay', 'Pay:', class: 'pay_label'
+        .pay_cost
+          0
     %button.btn.btn-info
       Confirm
 
