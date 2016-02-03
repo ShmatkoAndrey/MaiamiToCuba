@@ -2,8 +2,8 @@
   float:left;
   display: inline-block;
   height: 283px;
-  //width: 476px;
   overflow: auto;
+  width: 350px;
 
   >:nth-child(even) {
     background-color: #ffbcb1;
@@ -11,6 +11,16 @@
   >:nth-child(odd){
     background-color: lightgrey;
   }
+}
+
+.error {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  display: table-cell;
+  width: 283px;
+  height: 283px;
+  //background-color: red !important;
 }
 
 .timetable {

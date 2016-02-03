@@ -1,19 +1,20 @@
-.timetable_head
-  .name
-    %b
-      Sheep
-  .direction
-    %b
-      Direction
-  .time
-    %b
-      Time
-
-- ferries.each do |ferry|
-  .timetable{onClick: "ferry(#{ferry.id})"}
+- unless ferries.empty?
+  .timetable_head
     .name
-      = ferry.ferry.name
+      %b
+        Sheep
     .direction
-      = "to #{ferry.direction}"
+      %b
+        Direction
     .time
-      = "#{"0" if ferry.date.hour<= 9}#{ferry.date.hour}:#{"0" if ferry.date.min<= 9}#{ferry.date.min}"
+      %b
+        Time
+
+  - ferries.each do |ferry|
+    .timetable{onClick: "ferry(#{ferry.id})"}
+      .name
+        = ferry.ferry.name
+      .direction
+        = "to #{ferry.direction}"
+      .time
+        = "#{"0" if ferry.date.hour<= 9}#{ferry.date.hour}:#{"0" if ferry.date.min<= 9}#{ferry.date.min}"
