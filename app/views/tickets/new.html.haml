@@ -1,32 +1,38 @@
-#ticket
-  .form-group
-    = label_tag 'ferry_name', 'Ferry:', class: 'form-control-label'
-    = text_field_tag 'ferry_name', '', class: 'form-control', readOnly: true
-  .form-group
-    = label_tag 'direction', 'Direction:', class: 'form-control-label'
-    = text_field_tag 'direction', '', class: 'form-control', readOnly: true
-  .form-group
-    = label_tag 'date_val', 'Date:', class: 'form-control-label'
-    = text_field_tag 'date_val', '', class: 'form-control', readOnly: true
-  .form-group
-    = label_tag 'time_val', 'Time:', class: 'form-control-label'
-    = text_field_tag 'time_val', '', class: 'form-control', readOnly: true
-    = hidden_field_tag 'timetable_id', ''
-  .hidden_fields
-    .form-group{style: 'margin-bottom: 0;'}
-      = label_tag 'places', 'Places:', class: 'form-control-label places'
-      #places
-      #placeshidden
-    %br
-    #pay
+.row
+  .col-md-3
+    #ticket
       .form-group
-        = label_tag 'pay', 'Pay:', class: 'pay_label'
-        .pay_cost
-          0
-    %button{class: 'btn btn-info', onClick: 'confirm_pay()'}
-      Confirm
-
-#form
-  #date.ll-skin-melon
-  #ferries
-  #sheep
+        = label_tag 'ferry_name', 'Ferry:', class: 'form-control-label'
+        = text_field_tag 'ferry_name', '', class: 'form-control', readOnly: true
+      .form-group
+        = label_tag 'direction', 'Direction:', class: 'form-control-label'
+        = text_field_tag 'direction', '', class: 'form-control', readOnly: true
+      .form-group
+        = label_tag 'date_val', 'Date:', class: 'form-control-label'
+        = text_field_tag 'date_val', '', class: 'form-control', readOnly: true
+      .form-group
+        = label_tag 'time_val', 'Time:', class: 'form-control-label'
+        = text_field_tag 'time_val', '', class: 'form-control', readOnly: true
+        = hidden_field_tag 'timetable_id', ''
+      .hidden_fields
+        .form-group{style: 'margin-bottom: 0;'}
+          = label_tag 'places', 'Places:', class: 'form-control-label places'
+          #places
+          #placeshidden
+        %br
+        #pay
+          .form-group
+            = label_tag 'pay', 'Pay:', class: 'pay_label'
+            .pay_cost
+              0
+        %button{class: 'btn btn-info', onClick: 'confirm_pay()'}
+          Confirm
+  .col-md-9
+    #form
+      #date.ll-skin-melon
+      #ferries
+%br
+.col-md-1
+.col-md-11
+  #form
+    #sheep
