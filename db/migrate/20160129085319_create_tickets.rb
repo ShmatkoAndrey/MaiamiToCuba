@@ -1,7 +1,6 @@
 class CreateTickets < ActiveRecord::Migration
   def change
     create_table :tickets do |t|
-      t.integer :ferry_id
       t.string :place_id
       t.integer :timetable_id
 

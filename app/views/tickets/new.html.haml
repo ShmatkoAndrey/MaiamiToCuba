@@ -23,7 +23,7 @@
         = label_tag 'pay', 'Pay:', class: 'pay_label'
         .pay_cost
           0
-    %button.btn.btn-info
+    %button{class: 'btn btn-info', onClick: 'confirm_pay()'}
       Confirm
 
 #form

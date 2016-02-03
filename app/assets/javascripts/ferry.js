@@ -21,7 +21,7 @@ function place(place_id) {
     }
     else {
         _place.addClass('place-choose');
-        placehidden.append('<input name="place' + place_id.id + '" id="placeN' + place_id.id + '" type="hidden">');
+        placehidden.append('<input name="' + place_id.id + '" id="placeN' + place_id.id + '" type="hidden">');
         places.append(place_id.id + ', ');
         if($('.hidden_fields')[0].style.display != "block") $('.hidden_fields')[0].style.display = "block"
     }

@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 20160201134459) do
   end
 
   create_table "tickets", force: :cascade do |t|
-    t.integer  "ferry_id"
     t.string   "place_id"
     t.integer  "timetable_id"
     t.datetime "created_at",   null: false

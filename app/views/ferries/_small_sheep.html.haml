@@ -3,25 +3,25 @@
   .first_row
     - (0..16).each do |i|
       - id = "AA#{i+1}"
-      .place{id: id, onClick: "place(#{id})"}
+      = place(id, timetable).html_safe
     %br
     - (0..16).each do |i|
       - id = "AB#{i+1}"
-      .place{id: id, onClick: "place(#{id})"}
+      = place(id, timetable).html_safe
     %br
     - (0..16).each do |i|
       - id = "AC#{i+1}"
-      .place{id: id, onClick: "place(#{id})"}
+      = place(id, timetable).html_safe
 
   .second_row
     - (0..16).each do |i|
       - id = "BA#{i+1}"
-      .place{id: id, onClick: "place(#{id})"}
+      = place(id, timetable).html_safe
     %br
     - (0..16).each do |i|
       - id = "BB#{i+1}"
-      .place{id: id, onClick: "place(#{id})"}
+      = place(id, timetable).html_safe
     %br
     - (0..16).each do |i|
       - id = "BC#{i+1}"
-      .place{id: id, onClick: "place(#{id})"}
+      = place(id, timetable).html_safe

@@ -1,0 +1,7 @@
+<% if @sheep.typeship == "large"  %>
+    $("#sheep").html('<%= escape_javascript(render('ferries/large_sheep', timetable: @timetable)) %>');
+<% elsif @sheep.typeship == "small" %>
+    $("#sheep").html('<%= escape_javascript(render('ferries/small_sheep', timetable: @timetable)) %>');
+<%end%>
+
+$('#sheep_name').html('<%= @sheep.name %>');
