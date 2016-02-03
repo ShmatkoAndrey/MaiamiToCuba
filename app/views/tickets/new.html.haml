@@ -3,16 +3,16 @@
     #ticket
       .form-group
         = label_tag 'ferry_name', 'Ferry:', class: 'form-control-label'
-        = text_field_tag 'ferry_name', '', class: 'form-control', readOnly: true
+        = text_field_tag 'ferry_name', '', class: 'form-control', readOnly: true, style: 'margin-left:47px;'
       .form-group
         = label_tag 'direction', 'Direction:', class: 'form-control-label'
-        = text_field_tag 'direction', '', class: 'form-control', readOnly: true
+        = text_field_tag 'direction', '', class: 'form-control', readOnly: true, style: 'margin-left:20px;'
       .form-group
         = label_tag 'date_val', 'Date:', class: 'form-control-label'
         = text_field_tag 'date_val', '', class: 'form-control', readOnly: true
       .form-group
         = label_tag 'time_val', 'Time:', class: 'form-control-label'
-        = text_field_tag 'time_val', '', class: 'form-control', readOnly: true
+        = text_field_tag 'time_val', '', class: 'form-control', readOnly: true, style: 'margin-left:47px;'
         = hidden_field_tag 'timetable_id', ''
       .hidden_fields
         .form-group{style: 'margin-bottom: 0;'}

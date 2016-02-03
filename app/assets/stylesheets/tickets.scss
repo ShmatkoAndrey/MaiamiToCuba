@@ -9,20 +9,17 @@
 }
 
 #ticket {
-  border: 1px solid black;
+  border: 1px dotted black;
   display: inline-block;
   min-height: 250px;
   width: 100%;
-  //float: left;
-
-  //position: absolute;
 }
 
 #ticket .form-group .form-control {
-  float: right;
-  margin-right: 10px;
+  //float: right;
+  margin-left: 50px;
   margin-top: 10px;
-  width: 150px;
+  width: 60%;
   display:inline-block;
 }
 
