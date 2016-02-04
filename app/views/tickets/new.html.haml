@@ -1,6 +1,6 @@
 .row
   .col-md-2
-    .hidden_fields
+    -#.hidden_fields
       #ticket
         .form-group
           = label_tag 'ferry_name', 'Ferry:', class: 'form-control-label'
@@ -14,22 +14,39 @@
         .form-group
           = label_tag 'time_val', 'Time:', class: 'form-control-label'
           = text_field_tag 'time_val', '', class: 'form-control', readOnly: true, style: 'margin-left:47px;'
-          = hidden_field_tag 'timetable_id', ''
         .form-group{style: 'margin-bottom: 0;'}
           = label_tag 'places', 'Places:', class: 'form-control-label places'
           #places
-          #placeshidden
         %br
         #pay
           .form-group
             = label_tag 'pay', 'Pay:', class: 'pay_label'
             .pay_cost
               0
-        %button{class: 'btn btn-info', onClick: 'confirm_pay()'}
+        %button{class: 'btn btn-info'}
           Confirm
   .col-md-10
     #form
       #date.ll-skin-melon
       #ferries
-    #sheep
 
+.modal.fade.bs-example-modal-lg{'aria-labelledby' => 'myLargeModalLabel', :role => 'dialog', :tabindex => '-1'}
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %button.close{'aria-label' => 'Close', 'data-dismiss' => 'modal', :type => 'button'}
+          %span{'aria-hidden' => "true"} ×
+        %h4#myModalLabel.modal-title#sheep_name
+      .modal-body
+        #sheep
+        = hidden_field_tag 'timetable_id', ''
+        #placeshidden
+      .modal-footer
+        .pull-left
+          %button.btn.btn-default{'data-dismiss' => 'modal', :type => 'button'} Close
+        .hidden_fields
+          Total:
+          .pay_cost
+            0
+          $
+          %button.btn.btn-primary{:type => 'button', onClick: 'confirm_pay()'} Pay

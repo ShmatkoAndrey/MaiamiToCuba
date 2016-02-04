@@ -3,7 +3,7 @@
   display: inline-block;
   height: 283px;
   overflow: auto;
-  width: 50%;
+  //width: 620px;
 
   >:nth-child(odd) {
     background-color: #cdfffa;
@@ -23,65 +23,67 @@
   //background-color: red !important;
 }
 
-.timetable {
-  display: block;
-  border-bottom: 1px solid grey;
-  opacity: 0.8;
-}
-.timetable:hover, .timetable:focus {
-  opacity: 1;
-}
-
-.timetable_head {
-  background-color: #aaaaaa !important;
-  display: block;
-  border-bottom: 1px solid grey;
-}
-
-.name {
-  font-size: 18px;
+.date_arrival {
   display: inline-block;
-  cursor: default;
-  border-right: 1px solid black;
-  width: 125px;
-  padding: 15px;
+  font-size: 14px;
 }
 
-.time {
+#ferries td {
   font-size: 18px;
-  display: inline-block;
-  cursor: default;
-  border-right: 1px solid black;
-  width: 65px;
-  padding: 15px 0 15px 5px;
+  vertical-align: middle;
 }
 
-.direction {
-  font-size: 18px;
-  display: inline-block;
-  cursor: default;
-  border-right: 1px solid black;
-  width: 125px;
-  padding: 15px 0 15px 5px;
-}
+//.timetable {
+//  display: block;
+//  border-bottom: 1px solid grey;
+//  opacity: 0.8;
+//}
+//.timetable:hover, .timetable:focus {
+//  opacity: 1;
+//}
+//
+//.timetable_head {
+//  background-color: #aaaaaa !important;
+//  display: block;
+//  border-bottom: 1px solid grey;
+//}
 
-.time_arrival {
-  font-size: 18px;
-  display: inline-block;
-  cursor: default;
-  border-right: 1px solid black;
-  width: 155px;
-  padding: 15px 0 15px 5px;
-}
-.time_arrival > span {
-  font-size: 16px;
-}
+//.name {
+//  font-size: 18px;
+//  display: inline-block;
+//  cursor: default;
+//  border-right: 1px solid black;
+//  width: 125px;
+//  padding: 15px;
+//}
+//
+//.time {
+//  font-size: 18px;
+//  display: inline-block;
+//  cursor: default;
+//  border-right: 1px solid black;
+//  width: 220px;
+//  padding: 15px 0 15px 5px;
+//}
 
-.unoccupied_places {
-  font-size: 18px;
-  display: inline-block;
-  cursor: default;
-  border-right: 1px solid black;
-  width: 75px;
-  padding: 15px 0 15px 5px;
-}
+//.direction {
+//  font-size: 18px;
+//  display: inline-block;
+//  cursor: default;
+//  border-right: 1px solid black;
+//  width: 125px;
+//  padding: 15px 0 15px 5px;
+//}
+//
+//.unoccupied_places {
+//  font-size: 18px;
+//  display: inline-block;
+//  cursor: default;
+//  //border-right: 1px solid black;
+//  width: 60px;
+//  padding: 15px 0 15px 5px;
+//}
+
+//.order {
+//  display: inline-block;
+//}

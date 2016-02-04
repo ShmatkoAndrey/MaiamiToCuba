@@ -23,7 +23,7 @@ function place(place_id) {
         _place.addClass('place-choose');
         placehidden.append('<input name="' + place_id.id + '" id="placeN' + place_id.id + '" type="hidden">');
         places.append(place_id.id + ', ');
-        if($('.hidden_fields')[0].style.display != "block") $('.hidden_fields')[0].style.display = "block"
+        if($('.hidden_fields')[0].style.display != "inline-block") $('.hidden_fields')[0].style.display = "inline-block"
     }
 
     $.ajax({

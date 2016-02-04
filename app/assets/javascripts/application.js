@@ -15,4 +15,3 @@
 //= require jquery_ujs
 //= require jquery-ui.min
 //= require_tree .
-
