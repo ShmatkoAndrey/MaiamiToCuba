@@ -14,6 +14,15 @@
   font-size: 20px;
 }
 
+#notations {
+  float: left;
+  font-size: 16px;
+}
+#notations > span {
+    margin-left: -20px;
+}
+
+
 .small_sheep{
   width: auto;
   height: 250px;
