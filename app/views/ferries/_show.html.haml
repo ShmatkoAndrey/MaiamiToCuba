@@ -12,12 +12,23 @@
     .time
       %b
         Time
-
-  - ferries.each do |ferry|
-    .timetable{onClick: "ferry(#{ferry.id})"}
+    .time_arrival
+      %b
+        Arrival
+    .unoccupied_places
+      %b
+        Places
+  - ferries.each do |timetable|
+    .timetable{onClick: "ferry(#{timetable.id})"}
       .name
-        = ferry.ferry.name
+        = timetable.ferry.name
       .direction
-        = "to #{ferry.direction}"
+        = "to #{timetable.direction}"
       .time
-        = "#{"0" if ferry.date.hour<= 9}#{ferry.date.hour}:#{"0" if ferry.date.min<= 9}#{ferry.date.min}"
+        = "#{'0' if timetable.date.hour<= 9}#{timetable.date.hour}:#{'0' if timetable.date.min<= 9}#{timetable.date.min}"
+      .time_arrival
+        = "#{'0' if timetable.date_arrival.hour<= 9}#{timetable.date_arrival.hour}:#{'0' if timetable.date_arrival.min<= 9}#{timetable.date_arrival.min}"
+        %span
+          (#{'0' if timetable.date_arrival.year<= 9}#{timetable.date_arrival.year}-#{'0' if timetable.date_arrival.month<= 9}#{timetable.date_arrival.month}-#{'0' if timetable.date_arrival.day<= 9}#{timetable.date_arrival.day})
+      .unoccupied_places
+        = unoccupied_places(timetable)

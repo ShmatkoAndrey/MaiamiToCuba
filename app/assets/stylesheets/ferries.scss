@@ -3,12 +3,12 @@
   display: inline-block;
   height: 283px;
   overflow: auto;
-  width: 350px;
+  width: 50%;
 
-  >:nth-child(even) {
+  >:nth-child(odd) {
     background-color: #cdfffa;
   }
-  >:nth-child(odd){
+  >:nth-child(even) {
     background-color: #ffffff;
   }
 }
@@ -62,5 +62,26 @@
   cursor: default;
   border-right: 1px solid black;
   width: 125px;
+  padding: 15px 0 15px 5px;
+}
+
+.time_arrival {
+  font-size: 18px;
+  display: inline-block;
+  cursor: default;
+  border-right: 1px solid black;
+  width: 155px;
+  padding: 15px 0 15px 5px;
+}
+.time_arrival > span {
+  font-size: 16px;
+}
+
+.unoccupied_places {
+  font-size: 18px;
+  display: inline-block;
+  cursor: default;
+  border-right: 1px solid black;
+  width: 75px;
   padding: 15px 0 15px 5px;
 }
