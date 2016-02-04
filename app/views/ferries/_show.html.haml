@@ -20,7 +20,7 @@
         %td
           = "to #{timetable.direction}"
         %td
-          #{'0' if timetable.date.hour<= 9}#{timetable.date.hour}:#{'0' if timetable.date.min<= 9}#{timetable.date.min}-
+          #{'0' if timetable.date.hour<= 9}#{timetable.date.hour}:#{'0' if timetable.date.min<= 9}#{timetable.date.min} -
           #{'0' if timetable.date_arrival.hour<= 9}#{timetable.date_arrival.hour}:
           #{'0' if timetable.date_arrival.min<= 9}#{timetable.date_arrival.min}
           .date_arrival
