@@ -4,13 +4,17 @@
   height: 283px;
   overflow: auto;
 }
-%table {
+#ferries table.table.table-bordered tbody {
   >:nth-child(odd) {
     background-color: #cdfffa;
   }
   >:nth-child(even) {
     background-color: #ffffff;
   }
+}
+
+#ferries table.table.table-bordered tbody th {
+  background-color: #55d1dd;
 }
 
 .date_arrival {
