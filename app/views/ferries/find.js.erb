@@ -1,12 +1,6 @@
-$("#ferries").html('<%= escape_javascript(render('ferries/show', ferries: @ft)) %>');
+$("#ferries").html('<%= escape_javascript(render('ferries/show', timetables: @ft)) %>');
 
-$('#ferry_name').val('');
-$('#date_val').val('');
-$('#time_val').val('');
 $('#timetable_id').val('');
-$("#sheep").html('');
-$("#direction").val('');
-$("#places").html('');
 $("#placeshidden").html('');
 $('.pay_cost').html('0');
-if($('#placeshidden input').length == 0) $('.hidden_fields')[0].style.display = "none";
+if($('#placeshidden').find('input').length == 0) $('.hidden_fields')[0].style.display = "none";

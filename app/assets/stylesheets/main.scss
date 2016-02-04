@@ -1,4 +1,18 @@
 body {
-  background-image: url("bg.jpg");
+  background-image: url("bg.jpg"), url("http://galaxybackground.com/wp-content/uploads/2014/10/boat_sea_beach-normal.jpg");
   background-size: 100% ;
+}
+
+.error {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  display: table-cell;
+  width: 283px;
+  height: 283px;
+  //background-color: red !important;
+}
+
+.modal-lg {
+  width: 1000px !important;
 }

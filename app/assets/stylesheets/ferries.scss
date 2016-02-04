@@ -1,26 +1,16 @@
 #ferries {
-  float:left;
+  float: left;
   display: inline-block;
   height: 283px;
   overflow: auto;
-  //width: 620px;
-
+}
+%table {
   >:nth-child(odd) {
     background-color: #cdfffa;
   }
   >:nth-child(even) {
     background-color: #ffffff;
   }
-}
-
-.error {
-  text-align: center;
-  vertical-align: middle;
-  font-size: 24px;
-  display: table-cell;
-  width: 283px;
-  height: 283px;
-  //background-color: red !important;
 }
 
 .date_arrival {
@@ -32,58 +22,3 @@
   font-size: 18px;
   vertical-align: middle;
 }
-
-//.timetable {
-//  display: block;
-//  border-bottom: 1px solid grey;
-//  opacity: 0.8;
-//}
-//.timetable:hover, .timetable:focus {
-//  opacity: 1;
-//}
-//
-//.timetable_head {
-//  background-color: #aaaaaa !important;
-//  display: block;
-//  border-bottom: 1px solid grey;
-//}
-
-//.name {
-//  font-size: 18px;
-//  display: inline-block;
-//  cursor: default;
-//  border-right: 1px solid black;
-//  width: 125px;
-//  padding: 15px;
-//}
-//
-//.time {
-//  font-size: 18px;
-//  display: inline-block;
-//  cursor: default;
-//  border-right: 1px solid black;
-//  width: 220px;
-//  padding: 15px 0 15px 5px;
-//}
-
-//.direction {
-//  font-size: 18px;
-//  display: inline-block;
-//  cursor: default;
-//  border-right: 1px solid black;
-//  width: 125px;
-//  padding: 15px 0 15px 5px;
-//}
-//
-//.unoccupied_places {
-//  font-size: 18px;
-//  display: inline-block;
-//  cursor: default;
-//  //border-right: 1px solid black;
-//  width: 60px;
-//  padding: 15px 0 15px 5px;
-//}
-
-//.order {
-//  display: inline-block;
-//}

@@ -3,7 +3,7 @@
 <% elsif @sheep.typeship == "small" %>
     $("#sheep").html('<%= escape_javascript(render('ferries/small_sheep', timetable: @timetable)) %>');
 <%end%>
-$("#ferries").html('<%= escape_javascript(render('ferries/show', ferries: @ft)) %>');
+$("#ferries").html('<%= escape_javascript(render('ferries/show', timetables: @ft)) %>');
 
 $('#ferry_name').val('<%= @sheep.name %>');
 $('#date_val').val('<%= "#{@timetable.date.year}-#{"0" if @timetable.date.month<=9}#{@timetable.date.month}-#{"0" if @timetable.date.day<=9}#{@timetable.date.day}"  %>');

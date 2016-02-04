@@ -4,14 +4,8 @@
     $("#sheep").html('<%= escape_javascript(render('ferries/small_sheep', timetable: @timetable)) %>');
 <%end%>
 
-$('#ferry_name').val('<%= @sheep.name %>');
-$('#date_val').val('<%= "#{@timetable.date.year}-#{"0" if @timetable.date.month<=9}#{@timetable.date.month}-#{"0" if @timetable.date.day<=9}#{@timetable.date.day}"  %>');
-$('#time_val').val('<%= "#{"0" if @timetable.date.hour<=9}#{@timetable.date.hour}:#{"0" if @timetable.date.min<=9}#{@timetable.date.min}"  %>');
 $('#timetable_id').val('<%= @timetable.id %>');
-$('#direction').val('<%= @timetable.direction %>');
-$("#places").html('');
 $("#placeshidden").html('');
 $('#sheep_name').html('<%= @sheep.name %>');
-//<div id="notations"> <div class="place place-busy" style="float: left;"></div><span>Busy place</span></div>'
 $('.pay_cost').html('0');
 if($('#placeshidden input').length == 0) $('.hidden_fields')[0].style.display = "none";

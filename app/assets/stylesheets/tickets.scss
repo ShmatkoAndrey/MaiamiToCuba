@@ -9,50 +9,10 @@
   margin-right: 20px;
 }
 
-#ticket {
-  border: 1px dotted black;
-  display: inline-block;
-  min-height: 250px;
-  width: 100%;
-}
-
-#ticket .form-group .form-control {
-  //float: right;
-  margin-left: 50px;
-  margin-top: 10px;
-  width: 60%;
-  display:inline-block;
-}
-
-#ticket .form-group .form-control-label {
-  margin-left: 10px;
-  margin-top: 15px;
-}
-
-#places {
-  display: inline-block;
-  width: 150px;
-  min-height: 15px;
-  float: inherit;
-  margin-left: 25px;
-  margin-top: 15px;
-}
-
-.places {
-  display: inline-block;
-  float: left;
-}
-
 .hidden_fields {
   display: none;
 }
 
-.pay_label {
-  display: inline-block;
-  float: left;
-  margin-left: 10px;
-
-}
 .pay_cost {
   display: inline-block;
   margin-left: 10px;

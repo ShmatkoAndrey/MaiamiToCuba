@@ -1,31 +1,9 @@
-.modal-lg {
-  width: 980px !important;
-}
-
 #sheep{
-  //margin: auto;
   display: block;
   clear: both;
   min-height: 283px;
   width: 952px;
 }
-
-#sheep_name {
-  //padding: 15px;
-  //clear: both;
-  //border: 1px dotted black;
-  //text-align: center;
-  //font-size: 20px;
-}
-
-#notations {
-  float: left;
-  font-size: 16px;
-}
-#notations > span {
-    margin-left: -20px;
-}
-
 
 .small_sheep{
   width: auto;
@@ -44,10 +22,12 @@
   margin: 10px 10px 10px 10px;
   height: 100px;
 }
+
 .second_row{
   margin: 25px 10px;
   height: 100px;
 }
+
 .small_row{
   display:inline-block;
   margin: 15px 10px;
