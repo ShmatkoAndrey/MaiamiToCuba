@@ -6,15 +6,17 @@
 }
 #ferries table.table.table-bordered tbody {
   >:nth-child(odd) {
-    background-color: #cdfffa;
+    background-color: #ffffff;
   }
   >:nth-child(even) {
-    background-color: #ffffff;
+    background-color: #cdfffa;
   }
 }
 
 #ferries table.table.table-bordered tbody th {
-  background-color: #55d1dd;
+  background-color: #2e3641;
+  color: white;
+  font-weight: 500;
 }
 
 .date_arrival {
