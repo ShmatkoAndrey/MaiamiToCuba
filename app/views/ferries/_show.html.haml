@@ -1,4 +1,7 @@
-- unless ferries.empty?
+- if ferries.empty?
+  .error
+    At present no ferry
+-else
   .timetable_head
     .name
       %b
