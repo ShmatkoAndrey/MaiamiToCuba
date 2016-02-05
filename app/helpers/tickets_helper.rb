@@ -10,9 +10,16 @@ module TicketsHelper
     pl
   end
 
-  def busy(name, timetable)
-    place_id = Place.where(ferry_id: timetable.ferry.id, name: name).first.id
-    !Ticket.where(timetable_id: timetable.id, place_id: place_id).empty?
+  def busy_places(timetable)
+    busy_places = Array.new
+    Ticket.where(timetable_id: timetable.id).each do |ticket|
+      busy_places << ticket.place
+    end
+    busy_places
+  end
+
+  def busy(name, busy_places)
+    busy_places.any? {|place| place.name == name}
   end
 
 end
