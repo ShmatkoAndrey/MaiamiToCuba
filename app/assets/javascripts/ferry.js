@@ -7,28 +7,25 @@ function ferry(id){
 }
 
 function place(place_id) {
-    var places = $('#places');
+    pl = $(place_id);
     var placehidden = $('#placeshidden');
+    var hidden_fields = $('.hidden_fields');
     var type = "add";
-    _place = $(place_id);
-    if (_place.hasClass('place-choose')) {
-        _place.removeClass('place-choose');
+    if (pl.hasClass('place-choose')) {
+        pl.removeClass('place-choose');
         $('#placeN'+place_id.id).remove();
-        str = place_id.id + ', ';
-        places.text(places.text().replace(str, ''))
-        if($('#placeshidden input').length == 0) $('.hidden_fields')[0].style.display = "none";
+        if(placehidden.find('input').length == 0) hidden_fields[0].style.display = "none";
         type = 'remove';
     }
     else {
-        _place.addClass('place-choose');
+        pl.addClass('place-choose');
         placehidden.append('<input name="' + place_id.id + '" id="placeN' + place_id.id + '" type="hidden">');
-        places.append(place_id.id + ', ');
-        if($('.hidden_fields')[0].style.display != "inline-block") $('.hidden_fields')[0].style.display = "inline-block"
+        if(hidden_fields[0].style.display != "inline-block") hidden_fields[0].style.display = "inline-block"
     }
 
     $.ajax({
         type: 'GET',
-        url: 'ferries/cost?' + 'place=' + place_id.id + '&timetable=' + $('#timetable_id').val() + '&type_cost='+type,
+        url: 'ferries/add_ticket?' + 'place=' + place_id.id + '&timetable=' + $('#timetable_id').val() + '&type_cost='+type,
         dataType: 'script'
     });
 }

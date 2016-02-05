@@ -20,9 +20,10 @@ class FerriesController < ApplicationController
     end
   end
 
-  def cost
+  def add_ticket
     @timetable = Timetable.find(params[:timetable])
-    @cost = Place.where(name: params[:place], ferry_id: @timetable.ferry.id).first.price
+    @place =  Place.where(name: params[:place], ferry_id: @timetable.ferry.id).first
+    @cost = @place.price
     if params[:type_cost] == 'remove'
       @cost = -@cost
     end

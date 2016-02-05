@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'ferries/find'
   get 'ferries/sheep'
-  get 'ferries/cost'
+  get 'ferries/add_ticket'
   get 'tickets/pay'
 
   resource :tickets
