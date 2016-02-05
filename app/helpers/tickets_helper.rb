@@ -22,4 +22,13 @@ module TicketsHelper
     busy_places.any? {|place| place.name == name}
   end
 
+  def place_html(n, id_str, buy_tickets)
+    html = ''
+    (1..n).each do |i|
+      id = "#{id_str}#{i+1}"
+      html += place(id, buy_tickets).html_safe
+    end
+    html
+  end
+
 end

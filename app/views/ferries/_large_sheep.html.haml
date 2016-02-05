@@ -1,66 +1,36 @@
 - buy_tickets = busy_places(timetable)
 .large_sheep
   .small_row
-    - (0..6).each do |i|
-      - id = "AA#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'AA', buy_tickets).html_safe
     %br
-    - (0..6).each do |i|
-      - id = "AB#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'AB', buy_tickets).html_safe
     %br
-    - (0..6).each do |i|
-      - id = "AC#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'AC', buy_tickets).html_safe
 
   .small_row.small_row_right
-    - (0..6).each do |i|
-      - id = "BA#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'BA', buy_tickets).html_safe
     %br
-    - (0..6).each do |i|
-      - id = "BB#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'BB', buy_tickets).html_safe
     %br
-    - (0..6).each do |i|
-      - id = "BC#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'BC', buy_tickets).html_safe
 
   .second_row
-    - (0..16).each do |i|
-      - id = "CA#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(17, 'CA', buy_tickets).html_safe
     %br
-    - (0..16).each do |i|
-      - id = "CB#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(17, 'CB', buy_tickets).html_safe
     %br
-    - (0..16).each do |i|
-      - id = "CC#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(17, 'CC', buy_tickets).html_safe
 
   .small_row
-    - (0..6).each do |i|
-      - id = "DA#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'DA', buy_tickets).html_safe
     %br
-    - (0..6).each do |i|
-      - id = "DB#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'DB', buy_tickets).html_safe
     %br
-    - (0..6).each do |i|
-      - id = "DC#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'DC', buy_tickets).html_safe
 
   .small_row.small_row_right
-    - (0..6).each do |i|
-      - id = "EA#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'EA', buy_tickets).html_safe
     %br
-    - (0..6).each do |i|
-      - id = "EB#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'EB', buy_tickets).html_safe
     %br
-    - (0..6).each do |i|
-      - id = "EC#{i+1}"
-      = place(id, buy_tickets).html_safe
+    = place_html(7, 'EC', buy_tickets).html_safe
