@@ -1,17 +1,25 @@
 .ticket{id: "ticket#{place.name}"}
   %table
     %tr
-      %td
+      %th
         Ferry:
       %td
         #{timetable.ferry.name}
-    %tr
+      %th
+        Place:
       %td
+        #{place.name}
+    %tr
+      %th
         Direction:
       %td
         #{timetable.direction}
-    %tr
+      %th
+        Cost:
       %td
+        #{place.price}$
+    %tr
+      %th
         Time:
       %td
         #{'0' if timetable.date.hour<= 9}#{timetable.date.hour}:#{'0' if timetable.date.min<= 9}#{timetable.date.min} -
@@ -20,8 +28,3 @@
         .date_arrival
           (#{'0' if timetable.date_arrival.year<= 9}#{timetable.date_arrival.year}-#{'0' if timetable.date_arrival.month<= 9}
           #{timetable.date_arrival.month}-#{'0' if timetable.date_arrival.day<= 9}#{timetable.date_arrival.day})
-    %tr
-      %td
-        Place:
-      %td
-        #{place.name}

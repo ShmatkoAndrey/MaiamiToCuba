@@ -1,11 +1,19 @@
 #tickets {
-
+  display: inline-block;
+  vertical-align: top;
 }
 
 .ticket {
   padding: 10px;
   border: 1px dotted black;
   margin: 10px;
+  width: 450px;
+  display: inline-block;
+  background-color: #0092bc;
+  //background-color: #00c0ef;
+  color: #fff;
+  font-size: 14px;
+
 }
 
 .ticket table td {
