@@ -16,6 +16,7 @@ function place(place_id) {
         $('#placeN'+place_id.id).remove();
         if(placehidden.find('input').length == 0) hidden_fields[0].style.display = "none";
         type = 'remove';
+        $('#ticket' + place_id.id).remove()
     }
     else {
         pl.addClass('place-choose');

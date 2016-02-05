@@ -1,4 +1,4 @@
-.ticket
+.ticket{id: "ticket#{place.name}"}
   %table
     %tr
       %td
@@ -22,3 +22,6 @@
           #{timetable.date_arrival.month}-#{'0' if timetable.date_arrival.day<= 9}#{timetable.date_arrival.day})
     %tr
       %td
+        Place:
+      %td
+        #{place.name}

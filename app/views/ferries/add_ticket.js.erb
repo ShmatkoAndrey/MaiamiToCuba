@@ -1,4 +1,6 @@
 var pay = $('.pay_cost');
 pay.html(parseInt(pay.html()) + <%= @cost %>);
 
-$("#tickets").append('<%= escape_javascript(render('tickets/ticket', timetable: @timetable)) %>');
+<% if @cost > 0%>
+    $("#tickets").append('<%= escape_javascript(render('tickets/ticket', timetable: @timetable, place: @place)) %>');
+<%end%>
