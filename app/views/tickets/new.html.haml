@@ -16,6 +16,7 @@
         #sheep
         = hidden_field_tag 'timetable_id', ''
         #placeshidden
+        #tickets
       .modal-footer
         .pull-left
           %button.btn.btn-default{'data-dismiss' => 'modal', :type => 'button'} Close
@@ -24,5 +25,4 @@
           .pay_cost
             0
           $
-          #tickets
           %button.btn.btn-primary{:type => 'button', onClick: 'confirm_pay()'} Pay

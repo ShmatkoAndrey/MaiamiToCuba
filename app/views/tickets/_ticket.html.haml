@@ -1,0 +1,24 @@
+.ticket
+  %table
+    %tr
+      %td
+        Ferry:
+      %td
+        #{timetable.ferry.name}
+    %tr
+      %td
+        Direction:
+      %td
+        #{timetable.direction}
+    %tr
+      %td
+        Time:
+      %td
+        #{'0' if timetable.date.hour<= 9}#{timetable.date.hour}:#{'0' if timetable.date.min<= 9}#{timetable.date.min} -
+        #{'0' if timetable.date_arrival.hour<= 9}#{timetable.date_arrival.hour}:
+        #{'0' if timetable.date_arrival.min<= 9}#{timetable.date_arrival.min}
+        .date_arrival
+          (#{'0' if timetable.date_arrival.year<= 9}#{timetable.date_arrival.year}-#{'0' if timetable.date_arrival.month<= 9}
+          #{timetable.date_arrival.month}-#{'0' if timetable.date_arrival.day<= 9}#{timetable.date_arrival.day})
+    %tr
+      %td
