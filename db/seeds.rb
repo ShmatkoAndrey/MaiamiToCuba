@@ -1,6 +1,6 @@
 def self.create_places(type, id)
   if type == 'small'
-    (0..16).each do |i|
+    (0..17).each do |i|
       Place.create(ferry_id: id, name: "AA#{i+1}", price: 5)
       Place.create(ferry_id: id, name: "AB#{i+1}", price: 5)
       Place.create(ferry_id: id, name: "AC#{i+1}", price: 5)
@@ -9,7 +9,7 @@ def self.create_places(type, id)
       Place.create(ferry_id: id, name: "BC#{i+1}", price: 5)
     end
   elsif type == 'large'
-    (0..6).each do |i|
+    (0..7).each do |i|
       Place.create(ferry_id: id, name: "AA#{i+1}", price: 3)
       Place.create(ferry_id: id, name: "AB#{i+1}", price: 3)
       Place.create(ferry_id: id, name: "AC#{i+1}", price: 3)
@@ -23,7 +23,7 @@ def self.create_places(type, id)
       Place.create(ferry_id: id, name: "EB#{i+1}", price: 3)
       Place.create(ferry_id: id, name: "EC#{i+1}", price: 3)
     end
-    (0..16).each do |i|
+    (0..17).each do |i|
       Place.create(ferry_id: id, name: "CA#{i+1}", price: 2)
       Place.create(ferry_id: id, name: "CB#{i+1}", price: 2)
       Place.create(ferry_id: id, name: "CC#{i+1}", price: 2)

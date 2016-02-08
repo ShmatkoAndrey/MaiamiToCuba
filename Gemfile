@@ -52,3 +52,4 @@ end
 gem 'bootstrap-sass'
 gem 'html2haml'
 gem 'haml-rails'
+gem 'pdfkit' #pdf
