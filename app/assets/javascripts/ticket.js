@@ -9,7 +9,7 @@ function confirm_pay() {
     }
 
     $.ajax({
-        type: 'GET',
+        type: 'POST',
         url: 'tickets/pay?' + 'timetable=' + timetable + '&places=' + placesSTR,
         dataType: 'script'
     });

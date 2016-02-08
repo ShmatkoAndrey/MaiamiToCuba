@@ -11,23 +11,34 @@ class TicketsController < ApplicationController
       place = Place.find_by(name: place_name, ferry_id: @sheep)
       Ticket.create(place_id: place.id,  timetable_id: @timetable.id)
     end
-    date = @timetable.date
-    @ft = Timetable.where(date: date.beginning_of_day..date.end_of_day).order('date')
 
-    redirect_to paypal_url("")
+    @url = paypal_url("")
+    p 'url'*5
+    p @url
+    respond_to do |format|
+      format.js
+    end
   end
 
+
   def paypal_url(return_path)
+
+    items_name = 'Ferry tickets'
+    id = 4
+    price = 125
+    number = 5
+    quantity = 1
+
     values = {
-        business: "shmatuan-facilitator@gmail.com",
-        cmd: "_xclick",
+        business: 'shmatuan-facilitator@gmail.com',
+        cmd: '_xclick',
         upload: 1,
         return: "#{Rails.application.secrets.app_host}#{return_path}",
         invoice: id,
         amount: price,
-        item_name: "Ferry tickets",
+        item_name: 'Ferry tickets' + items_name,
         item_number: number,
-        quantity: '1'
+        quantity: quantity
     }
     "#{Rails.application.secrets.paypal_host}/cgi-bin/webscr?" + values.to_query
   end

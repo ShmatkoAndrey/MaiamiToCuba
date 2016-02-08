@@ -1,12 +1,1 @@
-<% if @sheep.typeship == "large"  %>
-    $("#sheep").html('<%= escape_javascript(render('ferries/large_sheep', timetable: @timetable)) %>');
-<% elsif @sheep.typeship == "small" %>
-    $("#sheep").html('<%= escape_javascript(render('ferries/small_sheep', timetable: @timetable)) %>');
-<%end%>
-$("#ferries").html('<%= escape_javascript(render('ferries/show', timetables: @ft)) %>');
-
-$('#timetable_id').val('<%= @timetable.id %>');
-$("#placeshidden").html('');
-$('#sheep_name').html('<%= @sheep.name %>');
-$('.pay_cost').html('0');
-if($('#placeshidden input').length == 0) $('.hidden_fields')[0].style.display = "none";
+window.location.href = '<%= @url.html_safe %>';
