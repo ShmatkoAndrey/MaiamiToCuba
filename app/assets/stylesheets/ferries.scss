@@ -1,8 +1,9 @@
 #ferries {
-  //float: left;
   display: inline-block;
-  //height: 283px;
-  //overflow: auto;
+}
+
+#ferries table td {
+  border: 1px solid #9e9e9e;
 }
 
 #ferries table.table.table-bordered tbody {
@@ -12,13 +13,6 @@
   >:nth-child(odd) {
     background-color: #cdfffa;
   }
-}
-
-#ferries table.table.table-bordered tbody th {
-  background-color: #2e3641;
-  color: white;
-  font-weight: 500;
-  //border-right-color: #2e3641;
 }
 
 .date {
@@ -39,4 +33,27 @@
 
 .datetime_to {
   display: inline-block;
+}
+
+.datetime_arrow {
+  display: inline-block;
+  margin-right: 35px;
+  position: relative;
+  top: -30px;
+}
+
+.prices {
+  display: inline-block;
+  color: #d83707;
+  font-size: 40px;
+}
+
+.prices > span {
+  font-size: 26px;
+  color: #7f7c7f;
+}
+
+.btn-order {
+  width: 100%;
+  height: 50px;
 }

@@ -1,7 +1,7 @@
 - if timetables.empty?
   At present no ferry
 -else
-  %table{class: 'table table-bordered'}
+  %table{class: ''}
     - timetables.each do |timetable|
       %tr
         %td
@@ -15,6 +15,8 @@
             %br
             = "#{timetable.direction}"
 
+          .datetime_arrow
+            →
 
           .datetime_to
             .time
@@ -25,9 +27,15 @@
             = "#{timetable.direction}"
 
           %td
+            .prices
+              = min_max_price(timetable.ferry)
+              %span
+                \/place
+            %br
+            Free places:
             = unoccupied_places(timetable)
-          %td
-            %button{class: 'btn btn-primary', onClick: "ferry(#{timetable.id})", 'data-target' => '.bs-example-modal-lg',
+            %br
+            %button{class: 'btn btn-primary btn-order', onClick: "ferry(#{timetable.id})", 'data-target' => '.bs-example-modal-lg',
             'data-toggle' => 'modal', :type => 'button'}
               Order
 
