@@ -5,7 +5,7 @@
       %input.form-control.direction_form_input{id: 'direction_from', 'aria-label' => '...', :type => 'text', readonly: true }
       .input-group-btn.direction_form
         %button.btn.btn-default.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown', :type => 'button'}
-          Direction to
+          To
           %span.caret
         %ul.dropdown-menu.dropdown-menu-right
           %li
@@ -16,8 +16,9 @@
 
     %br
     %b Dispatch date
-    = text_field_tag "", "", id: 'date', placeholder: 'Date', class: 'form-control direction_form_input', autocomplite: 'off'
+    = text_field_tag "", "", id: 'date_field', placeholder: 'Date', class: 'form-control direction_form_input', autocomplite: 'off'
+    #error_date
     %br
     .pull-right
-      %button.btn.btn-default.btn-orange
+      %button.btn.btn-default.btn-orange{onClick: 'search_tickets()'}
         SEARCH TICKETS

@@ -29,6 +29,14 @@ html body div.form_img div#form b {
   margin-bottom: 5px;
 }
 
+
+#error_date {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: red;
+  display: inline-block;
+}
+
 .btn-orange {
   color: white;
   background-color: #F03C07;
@@ -36,6 +44,11 @@ html body div.form_img div#form b {
   border: 0;
   padding: 15px 20px;
   margin-top: 20px;
+}
+
+.btn-orange:hover {
+  color: white;
+  background-color: #d83707;
 }
 
 .input-group-btn.direction_form > .btn {
