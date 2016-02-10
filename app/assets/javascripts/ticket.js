@@ -1,6 +1,6 @@
 function confirm_pay() {
     var timetable = $('#timetable_id').val();
-    var places = $('#placeshidden input');
+    var places = $('#placeshidden').find('input');
     var placesSTR = '';
 
     for(var i = 0; i < places.length; i++) {

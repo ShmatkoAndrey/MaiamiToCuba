@@ -1,32 +1,25 @@
-.ll-skin-melon{
+.ui-widget {
   font-size: 200%;
-}
-
-//.ll-skin-melon {
-//  font-size: 90%;
-//}
-
-.ll-skin-melon .ui-widget {
   //font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-  background: #2e3641;
+  background: #2e3641 !important;
   border: none;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
 }
 
-.ll-skin-melon .ui-datepicker {
+.ui-datepicker {
   padding: 0;
 }
 
-.ll-skin-melon .ui-datepicker-header {
+.ui-datepicker-header {
   border: none;
   background: transparent;
   font-weight: normal;
   font-size: 15px;
 }
 
-.ll-skin-melon .ui-datepicker-header .ui-state-hover {
+.ui-datepicker-header .ui-state-hover {
   background: transparent;
   border-color: transparent;
   cursor: pointer;
@@ -35,30 +28,30 @@
   -moz-border-radius: 0;
 }
 
-.ll-skin-melon .ui-datepicker .ui-datepicker-title {
+.ui-datepicker .ui-datepicker-title {
   margin-top: .4em;
   margin-bottom: .3em;
-  color: #e9f0f4;
+  color: #e9f0f4 !important;
 }
 
-.ll-skin-melon .ui-datepicker .ui-datepicker-prev-hover,
-.ll-skin-melon .ui-datepicker .ui-datepicker-next-hover,
-.ll-skin-melon .ui-datepicker .ui-datepicker-next,
-.ll-skin-melon .ui-datepicker .ui-datepicker-prev {
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover,
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
   top: .9em;
   border:none;
 }
 
-.ll-skin-melon .ui-datepicker .ui-datepicker-prev-hover {
+.ui-datepicker .ui-datepicker-prev-hover {
   left: 2px;
 }
 
-.ll-skin-melon .ui-datepicker .ui-datepicker-next-hover {
+.ui-datepicker .ui-datepicker-next-hover {
   right: 2px;
 }
 
-.ll-skin-melon .ui-datepicker .ui-datepicker-next span,
-.ll-skin-melon .ui-datepicker .ui-datepicker-prev span {
+.ui-datepicker .ui-datepicker-next span,
+.ui-datepicker .ui-datepicker-prev span {
   background-image: url(images/ui-icons_ffffff_256x240.png);
   background-position: -32px 0;
   margin-top: 0;
@@ -66,49 +59,68 @@
   font-weight: normal;
 }
 
-.ll-skin-melon .ui-datepicker .ui-datepicker-prev span {
+.ui-datepicker .ui-datepicker-prev span {
   background-position: -96px 0;
 }
 
-.ll-skin-melon .ui-datepicker table {
+.ui-datepicker table {
   margin: 0;
 }
 
-.ll-skin-melon .ui-datepicker th {
+.ui-datepicker th {
   padding: 1em 0;
-  color: #ccc;
+  color: #ccc !important;
   font-size: 13px;
   font-weight: normal;
   border: none;
-  border-top: 1px solid #3a414d;
+  border-top: 1px solid #3a414d !important;
 }
 
-.ll-skin-melon .ui-datepicker td {
-  background: #55d1dd;
-  border: none;
+
+.ui-datepicker td { ///--------------------------------
+  background: #4e5e6e !important;
+  border: 0;
   padding: 0;
 }
 
-.ll-skin-melon td .ui-state-default {
+td .ui-state-default {
   background: transparent;
   border: none;
   text-align: center;
   padding: .5em;
   margin: 0;
   font-weight: normal;
-  color: #efefef;
+  color: #efefef !important;
   font-size: 16px;
 }
 
-.ll-skin-melon .ui-state-disabled  {
+.ui-state-disabled  {
   opacity: 1;
 }
 
-.ll-skin-melon .ui-state-disabled .ui-state-default {
-  color: #fba49e;
+.ui-state-disabled .ui-state-default {
+  color: #fba49e !important;
 }
 
-.ll-skin-melon td .ui-state-active,
-.ll-skin-melon td .ui-state-hover {
+td .ui-state-active,
+td .ui-state-hover {
   background: #2e3641;
+  color: #f03c07 !important;
 }
+
+
+//---
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background-color: #4e5e6e;
+  border:  0;
+  text-align: center;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background: #607387 none repeat scroll 0 0;
+  border: 0;
+  //color: #f01bd2 !important;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  background-color: #3a414d;
+}
+

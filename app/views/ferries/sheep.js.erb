@@ -8,5 +8,5 @@ $('#timetable_id').val('<%= @timetable.id %>');
 $("#placeshidden").html('');
 $('#sheep_name').html('<%= @sheep.name %>');
 $('.pay_cost').html('0');
-if($('#placeshidden input').length == 0) $('.hidden_fields')[0].style.display = "none";
+if($('#placeshidden').find('input').length == 0) $('.hidden_fields')[0].style.display = "none";
 $("#tickets").html('');

@@ -36,10 +36,10 @@ Ferry.create(name: "Lion", typeship: "small")
 
 (3..28).each do |i|
   if i%2 == 0
-    Timetable.create(date: DateTime.new(2016,2,i,10,0),date_arrival: DateTime.new(2016,2,i,22,0), ferry_id: 1, direction: 'Maiami')
+    Timetable.create(date: DateTime.new(2016,2,i,10,0),date_arrival: DateTime.new(2016,2,i,22,0), ferry_id: 1, direction: 'Miami')
     Timetable.create(date: DateTime.new(2016,2,i,17,0),date_arrival: DateTime.new(2016,2,i+1,10,0), ferry_id: 2, direction: 'Cuba')
   else
-    Timetable.create(date: DateTime.new(2016,2,i,15,0),date_arrival: DateTime.new(2016,2,i+1,8,0), ferry_id: 2, direction: 'Maiami')
+    Timetable.create(date: DateTime.new(2016,2,i,15,0),date_arrival: DateTime.new(2016,2,i+1,8,0), ferry_id: 2, direction: 'Miami')
     Timetable.create(date: DateTime.new(2016,2,i,12,0),date_arrival: DateTime.new(2016,2,i+1,1,0), ferry_id: 1, direction: 'Cuba')
   end
 end

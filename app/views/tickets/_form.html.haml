@@ -1,0 +1,23 @@
+.form_img
+  #form
+    %b Direction
+    .input-group
+      %input.form-control.direction_form_input{id: 'direction_from', 'aria-label' => '...', :type => 'text', readonly: true }
+      .input-group-btn.direction_form
+        %button.btn.btn-default.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown', :type => 'button'}
+          Direction to
+          %span.caret
+        %ul.dropdown-menu.dropdown-menu-right
+          %li
+            %a{onClick: 'direction("Cuba", "Miami")', style: 'cursor: default;'} Miami
+          %li
+            %a{onClick: 'direction("Miami", "Cuba")', style: 'cursor: default;'} Cuba
+      %input.form-control.direction_form_input{id: 'direction_to', 'aria-label' => '...', :type => 'text', readonly: true }
+
+    %br
+    %b Dispatch date
+    = text_field_tag "", "", id: 'date', placeholder: 'Date', class: 'form-control direction_form_input', autocomplite: 'off'
+    %br
+    .pull-right
+      %button.btn.btn-default.btn-orange
+        SEARCH TICKETS

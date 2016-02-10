@@ -1,0 +1,54 @@
+.form_img {
+  background-image: url('http://luxfon.com/images/201203/luxfon.com_10177.jpg'), url("bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 700px;
+}
+
+#form {
+  display: block;
+  height: 500px;
+  width: 526px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+
+  padding: 25px;
+}
+#date {
+  float:left;
+  margin-right: 20px;
+}
+
+html body div.form_img div#form b {
+  display: block;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.btn-orange {
+  color: white;
+  background-color: #F03C07;
+  font-size: 16px;
+  border: 0;
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+
+.input-group-btn.direction_form > .btn {
+  margin: 0 5px;
+  font-size: 20px;
+  height: auto;
+}
+
+.direction_form_input {
+  font-size: 20px;
+  height: auto;
+}
+
+.dropdown-menu > li > a {
+  font-size: 20px;
+}
