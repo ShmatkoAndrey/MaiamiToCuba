@@ -31,19 +31,37 @@ def self.create_places(type, id)
   end
 end
 
-Ferry.create(name: "BigFoot", typeship: "large")
-Ferry.create(name: "Lion", typeship: "small")
+Ferry.create(name: 'BigFoot', typeship: 'large')
+Ferry.create(name: 'Lion', typeship: 'small')
+Ferry.create(name: 'Narwhal', typeship: 'small')
+Ferry.create(name: 'Dracula', typeship: 'large')
+Ferry.create(name: 'Black Devilfish', typeship: 'small')
+Ferry.create(name: 'Big Octopus', typeship: 'large')
+
 
 (3..28).each do |i|
   if i%2 == 0
-    Timetable.create(date: DateTime.new(2016,2,i,10,0),date_arrival: DateTime.new(2016,2,i,22,0), ferry_id: 1, direction: 'Miami')
-    Timetable.create(date: DateTime.new(2016,2,i,17,0),date_arrival: DateTime.new(2016,2,i+1,10,0), ferry_id: 2, direction: 'Cuba')
+    Timetable.create(date: DateTime.new(2016,2,i,10,0), date_arrival: DateTime.new(2016,2,i,22,0), ferry_id: 1, direction: 'Miami')
+    Timetable.create(date: DateTime.new(2016,2,i,17,0), date_arrival: DateTime.new(2016,2,i+1,10,0), ferry_id: 2, direction: 'Cuba')
+    Timetable.create(date: DateTime.new(2016,2,i,8,0), date_arrival: DateTime.new(2016,2,i,20,0), ferry_id: 3, direction: 'Miami')
+    Timetable.create(date: DateTime.new(2016,2,i,8,0), date_arrival: DateTime.new(2016,2,i,20,0), ferry_id: 4, direction: 'Cuba')
+    Timetable.create(date: DateTime.new(2016,2,i,16,0), date_arrival: DateTime.new(2016,2,i+1,6,0), ferry_id: 5, direction: 'Cuba')
+    Timetable.create(date: DateTime.new(2016,2,i,6,0), date_arrival: DateTime.new(2016,2,i,20,0), ferry_id: 6, direction: 'Miami')
+
   else
-    Timetable.create(date: DateTime.new(2016,2,i,15,0),date_arrival: DateTime.new(2016,2,i+1,8,0), ferry_id: 2, direction: 'Miami')
-    Timetable.create(date: DateTime.new(2016,2,i,12,0),date_arrival: DateTime.new(2016,2,i+1,1,0), ferry_id: 1, direction: 'Cuba')
+    Timetable.create(date: DateTime.new(2016,2,i,12,0), date_arrival: DateTime.new(2016,2,i+1,1,0), ferry_id: 1, direction: 'Cuba')
+    Timetable.create(date: DateTime.new(2016,2,i,15,0), date_arrival: DateTime.new(2016,2,i+1,8,0), ferry_id: 2, direction: 'Miami')
+    Timetable.create(date: DateTime.new(2016,2,i,8,0), date_arrival: DateTime.new(2016,2,i,20,0), ferry_id: 3, direction: 'Cuba')
+    Timetable.create(date: DateTime.new(2016,2,i,8,0), date_arrival: DateTime.new(2016,2,i,20,0), ferry_id: 4, direction: 'Miami')
+    Timetable.create(date: DateTime.new(2016,2,i,18,0), date_arrival: DateTime.new(2016,2,i+1,6,0), ferry_id: 5, direction: 'Miami')
+    Timetable.create(date: DateTime.new(2016,2,i,7,0), date_arrival: DateTime.new(2016,2,i,20,0), ferry_id: 6, direction: 'Cuba')
   end
 end
 
 
 create_places('large', 1)
 create_places('small', 2)
+create_places('small', 3)
+create_places('large', 4)
+create_places('small', 5)
+create_places('large', 6)

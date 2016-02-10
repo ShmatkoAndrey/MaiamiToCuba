@@ -1,33 +1,58 @@
 - if timetables.empty?
-  .error
-    At present no ferry
+  At present no ferry
 -else
   %table{class: 'table table-bordered'}
-    %tr
-      %th
-        Sheep
-      %th
-        Direction
-      %th
-        Time
-      %th
-        Places
-      %th
     - timetables.each do |timetable|
       %tr
         %td
           = timetable.ferry.name
         %td
-          = "to #{timetable.direction}"
-        %td
-          #{'0' if timetable.date.hour<= 9}#{timetable.date.hour}:#{'0' if timetable.date.min<= 9}#{timetable.date.min} -
-          #{'0' if timetable.date_arrival.hour<= 9}#{timetable.date_arrival.hour}:
-          #{'0' if timetable.date_arrival.min<= 9}#{timetable.date_arrival.min}
-          .date_arrival
-            (#{'0' if timetable.date_arrival.year<= 9}#{timetable.date_arrival.year}-#{'0' if timetable.date_arrival.month<= 9}
-            #{timetable.date_arrival.month}-#{'0' if timetable.date_arrival.day<= 9}#{timetable.date_arrival.day})
-        %td
-          = unoccupied_places(timetable)
-        %td
-          %button{class: 'btn btn-primary', onClick: "ferry(#{timetable.id})", 'data-target' => '.bs-example-modal-lg',
-          'data-toggle' => 'modal', :type => 'button'} Order
+          .datetime_from
+            .time
+              #{timetable.date.strftime('%I:%M %p')}
+            .date
+              #{timetable.date.strftime('%a %d %b %Y')}
+            %br
+            = "#{timetable.direction}"
+
+
+          .datetime_to
+            .time
+              #{timetable.date_arrival.strftime('%I:%M %p')}
+            .date
+              #{timetable.date_arrival.strftime('%a %d %b %Y')}
+            %br
+            = "#{timetable.direction}"
+
+          %td
+            = unoccupied_places(timetable)
+          %td
+            %button{class: 'btn btn-primary', onClick: "ferry(#{timetable.id})", 'data-target' => '.bs-example-modal-lg',
+            'data-toggle' => 'modal', :type => 'button'}
+              Order
+
+
+
+
+
+
+-#-else
+-#  %table{class: 'table table-bordered'}
+-#    - timetables.each do |timetable|
+-#      %tr
+-#        %td
+-#          = timetable.ferry.name
+-#        %td
+-#          = "to #{timetable.direction}"
+-#        %td
+-#          #{'0' if timetable.date.hour<= 9}#{timetable.date.hour}:#{'0' if timetable.date.min<= 9}#{timetable.date.min} -
+-#          #{'0' if timetable.date_arrival.hour<= 9}#{timetable.date_arrival.hour}:
+-#          #{'0' if timetable.date_arrival.min<= 9}#{timetable.date_arrival.min}
+-#          .date_arrival
+-#            (#{'0' if timetable.date_arrival.year<= 9}#{timetable.date_arrival.year}-#{'0' if timetable.date_arrival.month<= 9}
+-#            #{timetable.date_arrival.month}-#{'0' if timetable.date_arrival.day<= 9}#{timetable.date_arrival.day})
+-#        %td
+-#          = unoccupied_places(timetable)
+-#        %td
+-#          %button{class: 'btn btn-primary', onClick: "ferry(#{timetable.id})", 'data-target' => '.bs-example-modal-lg',
+-#          'data-toggle' => 'modal', :type => 'button'} Order

@@ -1,14 +1,15 @@
 #ferries {
-  float: left;
+  //float: left;
   display: inline-block;
-  height: 283px;
-  overflow: auto;
+  //height: 283px;
+  //overflow: auto;
 }
+
 #ferries table.table.table-bordered tbody {
-  >:nth-child(odd) {
+  >:nth-child(even) {
     background-color: #ffffff;
   }
-  >:nth-child(even) {
+  >:nth-child(odd) {
     background-color: #cdfffa;
   }
 }
@@ -20,12 +21,22 @@
   //border-right-color: #2e3641;
 }
 
-.date_arrival {
+.date {
   display: inline-block;
   font-size: 14px;
 }
 
 #ferries td {
+  padding: 60px 80px;
   font-size: 18px;
   vertical-align: middle;
+}
+
+.datetime_from {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.datetime_to {
+  display: inline-block;
 }

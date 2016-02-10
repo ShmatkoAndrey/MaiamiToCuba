@@ -46,7 +46,8 @@ html body div.form_img div#form b {
   margin-top: 20px;
 }
 
-.btn-orange:hover {
+.btn-orange:hover,
+.btn-orange:focus {
   color: white;
   background-color: #d83707;
 }
