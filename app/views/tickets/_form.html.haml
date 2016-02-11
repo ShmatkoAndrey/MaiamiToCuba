@@ -8,13 +8,9 @@
         .form-inline
           .inline
             %b Direction
-
             = text_field_tag '', 'Miami', id: 'direction_from', class: 'form-control direction_form_input', readonly: true
-
             %button.btn.btn-default.direction_form{onClick: 'direction();'} ↺
-
             = text_field_tag '', 'Cuba', id: 'direction_to', class: 'form-control direction_form_input', readonly: true
-
           .inline
             %b Dispatch date
             = text_field_tag '', '', id: 'date_field', placeholder: 'Select date', class: 'form-control direction_form_input', autocomplite: 'off'
@@ -22,5 +18,9 @@
           .inline
             %button.btn.btn-default.btn-orange{onClick: 'search_tickets()'}
               SEARCH TICKETS
+      .welcome_text
+        Welcome on www.MiamiToCuba!
+        %br
+        You can buy tickets to Cuba or Miami!
     .col-md-5
       #ferries
