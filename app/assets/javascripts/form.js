@@ -16,3 +16,15 @@ function search_tickets() {
         dataType: 'script'
     });
 }
+
+window.onload = function() {
+    var date = new Date(Date.now());
+    var direction = '';
+    $.ajax({
+        type: 'GET',
+        url: 'ferries/find?' +
+        'date=' + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() +
+        '&direction=' + direction,
+        dataType: 'script'
+    });
+};

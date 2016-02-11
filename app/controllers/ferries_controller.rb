@@ -6,8 +6,15 @@ class FerriesController < ApplicationController
 
   def find
     date = DateTime.parse(params[:date])
-    @ft = Timetable.where(direction: params[:direction],
-                          date: date.beginning_of_day..date.end_of_day).order('date') unless params[:direction] == ''
+    @today_all = false
+    if params[:direction] == ''
+      @today_all = true
+      @ft = Timetable.where(date: date.beginning_of_day..date.end_of_day).order('date')
+    else
+      @ft = Timetable.where(direction: params[:direction],
+                            date: date.beginning_of_day..date.end_of_day).order('date')
+    end
+
     respond_to do |format|
       format.js
     end

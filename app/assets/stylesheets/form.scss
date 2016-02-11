@@ -2,24 +2,25 @@
   background-image: url('http://luxfon.com/images/201203/luxfon.com_10177.jpg'), url("bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  height: 700px;
+
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.form {
+  position: absolute;
+  top: 60px;
 }
 
 #form {
   display: block;
-  height: 500px;
-  width: 526px;
-  position: absolute;
-  right: 20px;
-  bottom: 0;
   background-color: rgba(0,0,0,0.5);
-
   padding: 25px;
 }
-#date {
-  float:left;
-  margin-right: 20px;
+
+#date_field {
+  //width: 476px !important;
 }
 
 html body div.form_img div#form b {
@@ -30,8 +31,6 @@ html body div.form_img div#form b {
 }
 
 #error_date {
-  margin-top: 10px;
-  margin-left: 10px;
   color: red;
   display: inline-block;
 }
@@ -41,8 +40,7 @@ html body div.form_img div#form b {
   background-color: #F03C07;
   font-size: 16px;
   border: 0;
-  padding: 15px 20px;
-  margin-top: 20px;
+  padding: 15px 10px;
 }
 
 .btn-orange:hover,
@@ -55,13 +53,23 @@ html body div.form_img div#form b {
   margin: 0 5px;
   font-size: 20px;
   height: auto;
+  padding: 10px;
 }
 
 .direction_form_input {
+  display: inline-block;
   font-size: 20px;
   height: auto;
+  width: 200px !important;
 }
 
-.dropdown-menu > li > a {
+.inline {
+  display: inline-block;
+}
+
+.inline button.btn.btn-default {
+  margin: 0;
   font-size: 20px;
+  height: auto;
+  //padding: 10px;
 }

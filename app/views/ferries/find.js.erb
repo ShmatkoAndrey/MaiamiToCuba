@@ -5,3 +5,8 @@ $("#placeshidden").html('');
 $('.pay_cost').html('0');
 if($('#placeshidden').find('input').length == 0) $('.hidden_fields')[0].style.display = "none";
 $("#tickets").html('');
+<% if @today_all %>
+    $('#today_all').html('Today ferries');
+<% else %>
+$('#today_all').html('');
+<% end %>
