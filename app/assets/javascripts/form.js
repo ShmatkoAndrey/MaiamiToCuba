@@ -18,7 +18,18 @@ function search_tickets() {
 }
 
 window.onload = function() {
+
     var date = new Date(Date.now());
+
+    var d = new Date(),
+        output = [
+            ('0' + (d.getMonth() + 1)).substr(-2),
+            ('0' + d.getDate()).substr(-2),
+            d.getFullYear()
+        ].join('/');
+
+    $('#date_field').val(output);
+
     var direction = '';
     $.ajax({
         type: 'GET',

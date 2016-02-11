@@ -10,3 +10,7 @@ $("#tickets").html('');
 <% else %>
 $('#today_all').html('');
 <% end %>
+
+<% if @ft.empty? %>
+$('#today_all').html('At present no ferry');
+<% end %>
