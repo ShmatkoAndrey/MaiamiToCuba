@@ -13,7 +13,8 @@
             .date
               #{timetable.date.strftime('%a %d %b %Y')}
             %br
-            = "#{timetable.direction}"
+            = "#{'Miami' if timetable.direction == 'Cuba'}"
+            = "#{'Cuba' if timetable.direction == 'Miami'}"
 
             %br
             %br
@@ -24,8 +25,7 @@
             .date
               #{timetable.date_arrival.strftime('%a %d %b %Y')}
             %br
-            = "#{'Miami' if timetable.direction == 'Cuba'}"
-            = "#{'Cuba' if timetable.direction == 'Miami'}"
+            = "#{timetable.direction}"
 
           %td
             .prices

@@ -10,7 +10,6 @@ function confirm_pay() {
     }
 
     if(email.val() == '') {
-        email.attr('border', '2px solid red;');
         alert('Please enter your email!')
     }
     else {
