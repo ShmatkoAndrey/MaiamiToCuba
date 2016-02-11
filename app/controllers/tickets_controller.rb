@@ -18,7 +18,7 @@ class TicketsController < ApplicationController
       paypal_values[:price] += place.price
       paypal_values[:items_name] += "#{place.name}#{', ' if place_name != places.last}"
     end
-    @url = paypal_url("#{tickets_path}?tickets=#{tickets_ids}", paypal_values)
+    @url = paypal_url("#{tickets_path}?tickets=#{tickets_ids}&email=#{params[:email]}", paypal_values)
     respond_to do |format|
       format.js
     end
@@ -47,6 +47,9 @@ class TicketsController < ApplicationController
     tickets_ids.each do |ticket|
       @tickets << Ticket.find(ticket)
     end
+
+    TicketMailer.pay_email(params[:email], @tickets).deliver_later
+
   end
 
 end

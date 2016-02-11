@@ -16,6 +16,8 @@
         .pull-left
           %button.btn.btn-default{'data-dismiss' => 'modal', :type => 'button'} Close
         .hidden_fields
+          = text_field_tag 'email','', placeholder: 'Email(for tickets report)', id: 'email',
+           class: 'form-control inline', style: 'width: 200px;'
           Total:
           .pay_cost
             0
