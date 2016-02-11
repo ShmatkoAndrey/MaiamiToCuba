@@ -1,5 +1,8 @@
 #ferries {
   display: inline-block;
+
+  position: absolute;
+  bottom: 0;
 }
 
 #ferries table td {
@@ -21,9 +24,11 @@
 }
 
 #ferries td {
-  padding: 60px 80px;
+  padding: 40px 50px;
   font-size: 18px;
   vertical-align: middle;
+
+  background-color: rgba(0,0,0,0.3);
 }
 
 .datetime_from {

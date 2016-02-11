@@ -1,5 +1,6 @@
-function direction(from, to) {
-    $("#direction_to").val(to);
+function direction() {
+    from = $("#direction_to").val();
+    $("#direction_to").val($("#direction_from").val());
     $("#direction_from").val(from);
 }
 

@@ -32,7 +32,7 @@
               %span
                 \/place
             %br
-            Free places:
+            Places available:
             = unoccupied_places(timetable)
             %br
             %button{class: 'btn btn-primary btn-order', onClick: "ferry(#{timetable.id})", 'data-target' => '.bs-example-modal-lg',
