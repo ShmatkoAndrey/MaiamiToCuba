@@ -1,5 +1,3 @@
-%iframe{:frameborder => "0", :height => "100%", :scrolling => "no", :src => "http://beta.drivetagdev.com/widgets/tagbutton?uid=326496", :width => "100%"}
-
 = render 'tickets/form'
 
 .modal.fade.bs-example-modal-lg{'aria-labelledby' => 'myLargeModalLabel', :role => 'dialog', :tabindex => '-1'}
