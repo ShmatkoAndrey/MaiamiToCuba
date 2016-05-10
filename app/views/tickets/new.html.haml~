@@ -1,4 +1,4 @@
-= render 'test'
+%iframe{:frameborder => "0", :height => "100%", :scrolling => "no", :src => "https://beta.drivetagdev.com/widget_post/318709", :width => "100%"}
 
 = render 'tickets/form'
 
